@@ -1,0 +1,78 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html,body{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+:root{
+    --max-width: 114rem;
+}
+/* common-css */
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 2rem;
+}
+h4{
+    font-size: 1.9rem;
+}
+h5{
+    font-size: 1.6rem;
+}
+h6{
+    font-size: 1.6rem;
+}
+a{
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+li{
+    font-size: 1.6rem;
+}
+ul,ol,li{
+    list-style-type: none;
+}
+.d-flex{
+    display: flex;
+}
+.js-space-btn{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.m-auto{
+    margin: 0 auto;
+}
+.grid{
+    display: grid;
+    gap: 1rem;
+}
+/* common-css */
+/* navbar-css */
+.navigation{
+    height: 8rem;
+    max-width: var(--max-width);
+    width: 100%;
+    background: gainsboro;
+}
+.link-item li{
+    display: inline-block;
+}
+.link-contact{
+    display: flex;
+}
+.nav-right{
+    grid-template-columns: repeat(2,1fr);
+}
+/* navbar-css */

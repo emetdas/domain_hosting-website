@@ -6,6 +6,7 @@
             <li><a class="nav-link" href="#!">Hosting</a></li>
             <li><a class="nav-link" href="#!">Pricing</a></li>
             <li><a class="nav-link" href="#!">Network</a></li>
+            <a href="signup.php" target="_signup" class="signup-btn">Signup</a>
         </ul>
         <div class="contact-item">
             <div class="grid nav-right">

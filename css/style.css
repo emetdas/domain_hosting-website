@@ -9,9 +9,13 @@ html,body{
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-size: 62.5%;
+    font-family: var(--primary-font);
 }
 :root{
     --max-width: 114rem;
+    --black:#222222;
+    --primary-font:'Poppins', sans-serif;
+    --secondry-color:#fbca00;
 }
 /* common-css */
 h1{
@@ -34,6 +38,9 @@ h6{
 }
 a{
     text-decoration: none;
+    font-size: 1.6rem;
+}
+p{
     font-size: 1.6rem;
 }
 li{
@@ -59,20 +66,46 @@ ul,ol,li{
     gap: 1rem;
 }
 /* common-css */
+/* btn-css */
+.signup-btn{
+    font-weight: 500;
+    color: var(--black);
+    padding: 0.6rem 2rem;
+    background: var(--secondry-color);
+}
+/* btn-css */
 /* navbar-css */
 .navigation{
-    height: 8rem;
+    height: 6rem;
     max-width: var(--max-width);
     width: 100%;
-    background: gainsboro;
+    align-items: center;
+}
+.logo img{
+    width: 15rem;
 }
 .link-item li{
     display: inline-block;
+}
+.link-item{
+    margin-right: 3rem;
+}
+.link-item li{
+    padding: 1rem 1rem;
+}
+.nav-link{
+    font-weight: 500;
+    color: var(--black);
 }
 .link-contact{
     display: flex;
 }
 .nav-right{
     grid-template-columns: repeat(2,1fr);
+    color: var(--black);
+    font-weight: 300;
 }
 /* navbar-css */
+/* footer */
+
+/* footer */

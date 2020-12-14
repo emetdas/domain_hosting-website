@@ -1,5 +1,8 @@
 <nav class="navigation d-flex js-space-btn align-center m-auto">
     <div class="logo"><img src="images/logo.png" alt="logo"></div>
+    <div class="nav-icon">
+        <div class="icon-line"></div>
+    </div>
     <div class="link-contact">
         <ul class="link-item">
             <li><a class="nav-link" href="#!">Domain</a></li>

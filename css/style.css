@@ -16,6 +16,7 @@ html,body{
     --black:#222222;
     --primary-font:'Poppins', sans-serif;
     --secondry-color:#fbca00;
+    --white:#fff;
 }
 /* common-css */
 h1{
@@ -74,6 +75,72 @@ ul,ol,li{
     background: var(--secondry-color);
 }
 /* btn-css */
+/* nav-icon */
+.nav-icon{
+    position: relative;
+    width: 2.6rem;
+    height: 2.6rem;
+    cursor: pointer;
+    display: none;
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
+.icon-line{
+    width: 100%;
+    height: 0.2rem;
+    background: var(--black);
+    position: relative;
+}
+.icon-line,
+.icon-line::before,
+.icon-line::after{
+    transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+}
+.icon-line::before,
+.icon-line::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0;
+    height: 0.2rem;
+    background: var(--black);
+}
+.icon-line::before{
+    transform: translateY(-0.8rem);
+    -webkit-transform: translateY(-0.8rem);
+    -moz-transform: translateY(-0.8rem);
+    -ms-transform: translateY(-0.8rem);
+    -o-transform: translateY(-0.8rem);
+}
+.icon-line::after{
+    transform: translateY(0.8rem);
+    -webkit-transform: translateY(0.8rem);
+    -moz-transform: translateY(0.8rem);
+    -ms-transform: translateY(0.8rem);
+    -o-transform: translateY(0.8rem);
+}
+.nav-icon.open-nav .icon-line{
+    background: transparent;
+}
+.nav-icon.open-nav .icon-line::before{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+.nav-icon.open-nav .icon-line::after{
+    transform:rotate(-45deg) translateY(-0.1rem);
+    -webkit-transform:rotate(-45deg) translateY(-0.1rem);
+    -moz-transform:rotate(-45deg) translateY(-0.1rem);
+    -ms-transform:rotate(-45deg) translateY(-0.1rem);
+    -o-transform:rotate(-45deg) translateY(-0.1rem);
+}
+/* nav-icon */
 /* navbar-css */
 .navigation{
     height: 6rem;
@@ -109,3 +176,56 @@ ul,ol,li{
 /* footer */
 
 /* footer */
+/* media_query */
+@media (max-width:700px){
+    .navigation{
+        background: var(--balck);
+        position: relative;
+        z-index: 10000;
+    }
+    .logo{
+        margin-left: 2rem;
+    }
+    .link-contact{
+        display: none;
+    }
+    .nav-icon{
+        margin-right: 2rem;
+        display: block;
+    }
+    .signup-btn{
+        display: inline-block;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+    }
+    .open-item{
+        display: block;
+    }
+    .link-contact{
+        position: absolute;
+        top: 6.9rem;
+        z-index: 2;
+        background: var(--black);
+        width: 100%;
+        left: 0;
+        height: calc(100vh - 7rem);
+    }
+    .link-item .nav-link{
+        color: var(--white);
+        margin-left: 2rem;
+    }
+    .link-item li{
+        display: block;
+    }
+    .link-contact{
+        text-align: center;
+    }
+    .nav-right{
+        grid-template-columns: repeat(1,1fr);
+        font-weight: 300;
+    }
+    .contact-item{
+        color: var(--white);
+    }
+}
+/* media_query */

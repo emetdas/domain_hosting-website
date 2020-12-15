@@ -14,12 +14,12 @@
         <div class="contact-item">
             <div class="grid nav-right">
                 <div class="contact-item">
-                    <li>Product Status</li>
-                    <li>(012) 6985 236 7512</li>
+                    <li>Product Status <i class="far fa-check-circle"></i></li>
+                    <li>(012) 6985 236 7512 <i class="fas fa-phone"></i></li>
                 </div>
                 <div class="contact-item">
-                    <li>Knowledge Base</li>
-                    <li>Support Chat</li>
+                    <li>Knowledge Base <i class="far fa-question-circle"></i></li>
+                    <li>Support Chat <i class="far fa-comment"></i></li>
                 </div>
             </div>
         </div>

@@ -17,6 +17,7 @@ html,body{
     --primary-font:'Poppins', sans-serif;
     --secondry-color:#fbca00;
     --white:#fff;
+    --sky:#2d9af4;
 }
 /* common-css */
 h1{
@@ -75,6 +76,11 @@ ul,ol,li{
     background: var(--secondry-color);
 }
 /* btn-css */
+/* icon */
+.contact-item li i{
+    color: var(--sky);
+}
+/* icon */
 /* nav-icon */
 .nav-icon{
     position: relative;
@@ -172,6 +178,9 @@ ul,ol,li{
     color: var(--black);
     font-weight: 300;
 }
+.contact-item{
+    text-align: right;
+}
 /* navbar-css */
 /* footer */
 
@@ -226,6 +235,7 @@ ul,ol,li{
     }
     .contact-item{
         color: var(--white);
+        text-align: center;
     }
 }
 /* media_query */

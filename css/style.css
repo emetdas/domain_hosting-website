@@ -51,6 +51,9 @@ li{
 ul,ol,li{
     list-style-type: none;
 }
+input{
+    outline: none;
+}
 .d-flex{
     display: flex;
 }
@@ -182,6 +185,24 @@ ul,ol,li{
     text-align: right;
 }
 /* navbar-css */
+/* --hero-- */
+.hero{
+    background-size: cover;
+    background-image: url(../images/banner.jpg);
+    height: calc(100vh - 6rem);
+    position: relative;
+}
+.hero-contant{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+/* --hero-- */
 /* footer */
 
 /* footer */

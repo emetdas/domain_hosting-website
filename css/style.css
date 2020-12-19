@@ -18,6 +18,7 @@ html,body{
     --secondry-color:#fbca00;
     --white:#fff;
     --sky:#2d9af4;
+    --sky-op:#1979c7d2;
 }
 /* common-css */
 h1{
@@ -201,6 +202,18 @@ input{
     -moz-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     -o-transform: translate(-50%,-50%);
+}
+.hero-search{
+    padding: 1rem;
+    background: var(--sky-op);
+    display: flex;
+}
+.hero-search form{
+    width: 100%;
+    display: flex;
+}
+.hero-search form input[type="text"]{
+    flex: 1;
 }
 /* --hero-- */
 /* footer */

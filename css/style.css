@@ -246,12 +246,12 @@ input{
     }
     .link-contact{
         position: absolute;
-        top: 6.9rem;
+        top: 6rem;
         z-index: 2;
         background: var(--black);
         width: 100%;
         left: 0;
-        height: calc(100vh - 7rem);
+        height: calc(100vh - 6rem);
     }
     .link-item .nav-link{
         color: var(--white);
